@@ -1,4 +1,4 @@
-3proxy install script for Debian / Ubuntu VPS
+3proxy install script for Ubuntu VPS
 ======================================================
 
 A simple script (without any russian in it, yeepeeh) to install the lightweight russian proxy: 3proxy (http://3proxy.ru/) as an elite high anonymous HTTP proxy with SSL support with a few command lines. 
@@ -10,7 +10,7 @@ This setup has been created to quickly install a proxy on small lowendbox VPS mo
 
 Download, make executable and run with these lines :
 
-    wget --no-check-certificate https://raw.github.com/barankilic/3proxy/master/3proxyinstaller.sh
+    wget --no-check-certificate https://raw.github.com/ruiruige/3proxy/master/3proxyinstaller.sh
     chmod +x 3proxyinstaller.sh
     ./3proxyinstaller.sh
 
@@ -34,20 +34,14 @@ Once you've change the username / password you can start the proxy
 	
 For Uninstall Download, make executable and run with these lines :
 
-	wget --no-check-certificate https://raw.github.com/barankilic/3proxy/master/3proxyuninst.sh
+	wget --no-check-certificate https://raw.github.com/ruiruige/3proxy/master/3proxyuninst.sh
 	chmod +x 3proxyuninst.sh
 	./3proxyuninst.sh
 
-**Script tested on 20.05.2016 on the following fresh VPS install distros :**
+**Script tested on 04.03.2017 on the following OS :**
 
-- Ubuntu 14.04 64bit (Vmware)
+- Ubuntu 16.04 64bit 
 
-**Script will run on :**
-- Debian 6 32bits
-- Debian 7 32bits
-- Ubuntu 12.10 32bits
-- Ubuntu 12.04 32bits
-- Ubuntu 14.04 32bits and 64bits
 
 <<<<<<< HEAD
 =======
