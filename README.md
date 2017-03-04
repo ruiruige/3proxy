@@ -41,9 +41,3 @@ For Uninstall Download, make executable and run with these lines :
 **Script tested on 04.03.2017 on the following OS :**
 
 - Ubuntu 16.04 64bit 
-
-
-<<<<<<< HEAD
-=======
-http://barankilic.github.io/3proxy/
->>>>>>> origin/master
