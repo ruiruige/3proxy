@@ -1,0 +1,9 @@
+[Unit]
+Description=3proxy , a good stable http proxy server
+Documentation=https://blog.ruiruige1991.xyz
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/etc/3proxy/3proxy /etc/3proxy/3proxy.cfg
+ExecStop=/usr/bin/killall 3proxy
