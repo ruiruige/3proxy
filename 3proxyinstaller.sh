@@ -1,10 +1,11 @@
 apt-get update && apt-get -y upgrade
 apt-get install -y build-essential nano
-wget --no-check-certificate https://github.com/ruiruige/3proxy/blob/master/archive/3proxy-3proxy-0.8.6.tar.gz
-tar xzf 3proxy-0.8.6.tar.gz
+wget --no-check-certificate https://github.com/ruiruige/3proxy/raw/master/archive/3proxy-3proxy-0.8.6.zip
+unzip 3proxy-3proxy-0.8.6.zip
 cd 3proxy-3proxy-0.8.6
 make -f Makefile.Linux
 cd src
+mkdir /var/log/3proxy/
 mkdir /etc/3proxy/
 mv 3proxy /etc/3proxy/
 cd /etc/3proxy/
@@ -12,7 +13,7 @@ wget --no-check-certificate https://github.com/ruiruige/3proxy/raw/master/3proxy
 chmod 600 /etc/3proxy/3proxy.cfg
 wget --no-check-certificate https://github.com/ruiruige/3proxy/raw/master/.proxyauth
 chmod 600 /etc/3proxy/.proxyauth
-cd /etc/init.d/
-wget --no-check-certificate https://raw.github.com/ruiruige/3proxy/master/3proxyinit
-chmod  +x /etc/init.d/3proxyinit
-update-rc.d 3proxyinit defaults
+cd /lib/systemd/system/
+wget --no-check-certificate https://raw.github.com/ruiruige/3proxy/master/3proxy.service
+systemctl daemon-reload
+systemctl enable 3proxy
